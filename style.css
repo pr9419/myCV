@@ -50,12 +50,24 @@ b{
 }
 
 .top-cloud{
+  display:flex;
   position: absolute;
   right: 300px;
   top: 50px;
 }
 
+.move-to-side {
+  position: relative;
+  transform: translateX(-100%);
+  transition: transform 1s ease-in-out;
+}
+    
+.move-to-side.animate {
+  transform: translateX(0%);
+}
+
 .bottom-cloud{
+  display:flex;
   position: absolute;
   left: 300px;
   bottom: 300px;
