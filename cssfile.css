@@ -1,218 +1,127 @@
-body{
-  margin: 0;
-  text-align: center;
-  background-color:black;
-  color:white;
-  text-align:left;
-  padding:30px;
-  font-size:20px;
+body {
+  background-color: black;
+  color: white;
+  text-align: left;
+  font-size: 20px;
   word-spacing: 5px;
 }
 
-h1{
-  color: white;
-  margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
-  font-size: 60px;
+.header{
+  width:100%;
+  height:auto;
 }
 
-h2{
-  color: white;
-  font-family: 'Montserrat' , sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-}
-
-h3{
-  color: #11999E;
-}
-
-b{
-  color: yellow;
-}
-
-.main {
-  position: relative;
-  margin-top:-8px;
-  text-align: left;
-}
-
-
-.img-links{
-  align: right;
-  position: relative;
-  padding-right:30px;
-  margin-top:50px;
-  width:100px;
-  height:100px;
-  left:50%;
-  transform: translateX(250%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-
-.profile-img{
+.header-profile-img {
   border: solid 0px;
-  margin-top:50px;
+  float:left;
+  margin:20px;
   border-radius: 100%;
   width: 150px;
   height: 150px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-600%);
+  left:50%;
   animation-name: slide-left;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
 
 .profile-info{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-160%);
+  float:left;
+  margin:0px 20px 20px 20px;
   animation-name: slide-left;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
 
-.summary_heading{
-  margin-top:100px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-360%);
+.links{
+  float:left;
+  margin:50px 50px 0 60px;
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.img-links {
+  width: 100px;
+  height: 100px;
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.left-info{
+  float:left;
+  text-align: left;
+  width:45%;
+  margin-left: 20px;
+}
+
+.right-info{
+  float:right;
+  text-align: left;
+  width:45%;
+}
+
+.left {
+  margin-bottom:50px;
   animation-name: slide-left;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
 
-.summary{
-  margin-top:240px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-70%);
-  animation-name: slide-left;
+.right {
+  margin-bottom:30px;
+  margin-left:60px;
+  animation-name: slide-right;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
 
-.skills_heading{
-  margin-top:100px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(230%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
+.cert-links {
+  margin-right:40px;
+  margin-bottom:40px;
+  width: 95%;
+  height: 100%;
 }
 
-.skills{
-  margin-top:240px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(75%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
+.education {
+  margin-top:120px;
 }
 
-.experience_heading{
-  margin-top:500px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-340%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-
-.experience{
-  margin-top:640px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-70%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-
-.education_heading{
-  margin-top:500px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(155%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-
-.education{
-  margin-top:640px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(55%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-
-.certificates_heading{
-  margin-top:1200px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-170%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-
-.certificates{
-  margin-top:1340px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-115%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-
-.cert-links{
-  position: relative;
-  margin-top:1250px;
-  width:420px;
-  height:400px;
-  left:50%;
-  transform: translateX(15%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
-}
-
-.reference{
-  position: absolute;
-  left: 50%;
-  margin-top:50px;
-  transform: translateX(-180%);
-  animation-name: slide-left;
-  animation-duration: 2s;
-  animation-timing-function: ease-out;
+.right-info .right .cert-links:first-child {
+  margin-top:150px;
 }
 
 @keyframes slide-left {
   0% {
     opacity: 0;
-    transform: translateX(0%);
-    }
+    transform: translateX(50%);
+  }
 }
 
-a{
-  color: red;
-  font-family: 'Montserrat' , sans-serif;
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+h1 {
+  color: white;
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+}
+
+h2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: normal;
 }
 
-p{
-  font-size: 18px;
+h3 {
+  color: #11999E;
 }
-	
-	
+
+b {
+  color: yellow;
+}
