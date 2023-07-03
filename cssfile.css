@@ -34,7 +34,7 @@ body {
 
 .links{
   float:left;
-  margin:50px 50px 0 60px;
+  margin:50px 0px 0px 30px;
   animation-name: slide-right;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -70,14 +70,14 @@ body {
 
 .right {
   margin-bottom:30px;
-  margin-left:60px;
+  margin-left:30px;
   animation-name: slide-right;
   animation-duration: 2s;
   animation-timing-function: ease-out;
 }
 
 .cert-links {
-  margin-right:40px;
+  margin-right:30px;
   margin-bottom:40px;
   width: 95%;
   height: 100%;
