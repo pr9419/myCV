@@ -1,0 +1,133 @@
+body {
+  background-color: #27374D;
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  word-spacing: 5px;
+}
+
+.header{
+  width:100%;
+  height:auto;
+}
+
+.header-profile-img {
+  border: solid 0px;
+  float:left;
+  margin:20px;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  left:50%;
+  animation-name: slide-left;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.profile-info{
+  float:left;
+  margin:0px 200px 20px 20px;
+  animation-name: slide-left;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.links{
+  float:left;
+  margin:50px 0px 0px 30px;
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.img-links {
+  width: 100px;
+  height: 100px;
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.left-info{
+  float:left;
+  text-align: left;
+  width:45%;
+  margin-left: 20px;
+}
+
+.right-info{
+  float:right;
+  text-align: left;
+  width:45%;
+}
+
+.left {
+  margin-bottom:50px;
+  animation-name: slide-left;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+
+}
+
+.right {
+  margin-bottom:30px;
+  margin-left:30px;
+  animation-name: slide-right;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.qar{
+  margin-top:50px;
+}
+
+.education{
+  margin-top:135px;
+}
+
+.references{
+  margin-top:230px;
+}
+
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+h1 {
+  color: yellow;
+  font-family: 'Sacramento', cursive;
+  font-size: 50px;
+}
+
+h2 {
+  color: yellow;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h3 {
+  color: white;
+}
+
+b {
+  color: white;
+}
+
+ul {
+  list-style-type: "👉 ";
+}
+
+ol {
+  list-style-type: "🖥️ ";
+}
